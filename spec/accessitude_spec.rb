@@ -59,7 +59,7 @@ describe Accessitude do
     
     it "should create using accessitude attributes" do
       params = {"one" => "one", "two" => "two", "title" => "title", "body" => "body", "hamster"=>"not set"}
-      instance = subject.create_from_params(params)
+      instance = subject.new_from_params(params)
       instance.title.should eql "title"
       instance.body.should eql "body"
       instance.desc.should be_nil

@@ -25,7 +25,7 @@ Now add to models that you want to have `Accessitude`:
     
 Now you can create a new instance in a Controller and simply pass in the entire `param` hash. Accessitude will only select params that have been set in the model's `attr_accessible`:
 
-    Message.create_from_params(params)
+    Message.new_from_params(params)
     
 Also you can update an existing instance:
     

@@ -45,7 +45,7 @@ module Accessitude
         end
         
         # Create a new instance only using attr_accessible params
-        def create_from_params(params)
+        def new_from_params(params)
           self.create( params.slice(*accessitude_attrs) )
         end        
         
