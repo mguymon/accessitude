@@ -24,7 +24,12 @@ module Accessitude
       define_method :accessitude_attrs do
         self.class.accessitude_attrs
       end
-      
+
+      # Check if any of the accessible attributes are not _blank_
+      # @return [Boolean]
+      define_method :has_accessitude_data do
+        self.attributes.values_at( *self.accessitude_attrs ).compact.delete_if { |attr| attr.blank? }.size > 0
+      end
       
       # Set attributes of instance only using attr_accessible params
       define_method :attributes_from_params do |params|

@@ -47,6 +47,11 @@ describe Accessitude do
       subject.body.should eql "test body"
       subject.hamster.should eql "hamster"
     end
+
+    it "should have accessitude data" do
+      Message.new.has_accessitude_data.should be_false
+      subject.has_accessitude_data.should be_true
+    end
   end  
   
   describe "New" do
