@@ -2,7 +2,8 @@
 
 ### Don't tell me what params I need, I will tell you!
 
-A helper for Rails that will select only accessible parameters to be passed to a Model.
+A helper for Rails that will select only accessible parameters to be passed to a Model. This is useful for frameworks like _Angularjs_, which will pass all attributes in a request when only a select few should be accessible to the model.
+
 
 https://github.com/mguymon/accessitude
 
