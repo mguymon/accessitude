@@ -1,6 +1,6 @@
 # Accessitude
 
-### Don't tell me what params ! need, I will tell you!
+### Don't tell me what params I need, I will tell you!
 
 A helper for Rails that will select only accessible parameters to be passed to a Model.
 
