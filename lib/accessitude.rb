@@ -41,7 +41,7 @@ module Accessitude
         # Array of all accessible attributes
         # @return [Array]
         def accessitude_attrs
-          self.attr_accessible[:default].to_a - ['','default','_destroy']
+          self.attr_accessible[:default].to_a - ['','default']
         end
         
         # Create a new instance only using attr_accessible params
